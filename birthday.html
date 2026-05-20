@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width,
+    initial-scale=1.0">
+
+    <title>Happy Birthday</title>
+
+    <link rel="stylesheet"
+    href="/static/birthday.css">
+
+</head>
+
+<body>
+
+    <!-- Stars -->
+
+    <div class="stars"></div>
+
+    <!-- Main Card -->
+
+    <div class="card">
+
+        <h1>🎂 Happy Birthday 🎉</h1>
+
+        <h2>{{ name }}</h2>
+
+        <!-- Typing Wishes -->
+
+        <div class="typing"></div>
+
+        <!-- Cake -->
+
+        <div class="cake">
+
+            🎂
+
+        </div>
+
+        <p>
+
+            Wishing you happiness,
+            success and unforgettable
+            memories ✨
+
+        </p>
+
+        <!-- Buttons -->
+
+        <div class="buttons">
+
+            <button onclick="celebrate()">
+
+                🎊 Celebrate
+
+            </button>
+
+            <button onclick="showMessage()">
+
+                💌 Special Wish
+
+            </button>
+
+            <button onclick="secretLove()">
+
+                ❤️ Secret Message
+
+            </button>
+
+            <button onclick="showLetter()">
+
+                💖 Love Letter
+
+            </button>
+
+        </div>
+
+        <!-- Gift -->
+
+        <div class="gift-box"
+        onclick="openGift()">
+
+            🎁
+
+        </div>
+
+        <!-- Gift Message -->
+
+        <div id="giftMessage"
+        class="gift-message">
+
+        </div>
+
+        <!-- Love Message -->
+
+        <div class="love-message">
+
+            ❤️ I LOVE YOU ❤️
+
+        </div>
+
+        <!-- Final Message -->
+
+        <div class="final-message">
+
+            You are the best gift
+            in my life 💖✨
+
+        </div>
+
+        <!-- Memory -->
+
+        <div class="memory">
+
+            🌟 Every birthday with you
+            becomes a beautiful memory 🌟
+
+        </div>
+
+        <!-- Reasons -->
+
+        <div class="love-reasons">
+
+            <h2>💖 Why You Are Special 💖</h2>
+
+            <ul>
+
+                <li>Your smile makes everything better 😊</li>
+
+                <li>You make every moment beautiful ✨</li>
+
+                <li>You are my comfort and happiness ❤️</li>
+
+                <li>You make my life complete 🌹</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Ending -->
+
+        <div class="ending-message">
+
+            🌍 You Mean The World To Me 🌍
+
+        </div>
+
+    </div>
+
+    <!-- Popup -->
+
+    <div id="popup"
+    class="popup">
+
+        <div class="popup-content">
+
+            <h2>
+
+                💖 Birthday Wish 💖
+
+            </h2>
+
+            <p id="popupWish">
+
+            </p>
+
+            <button onclick="closePopup()">
+
+                Close
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Love Letter Popup -->
+
+    <div id="letterPopup"
+    class="popup">
+
+        <div class="popup-content">
+
+            <h2>
+
+                💖 My Letter To You 💖
+
+            </h2>
+
+            <p>
+
+                No matter where life takes us,
+                I always want to see you smile.
+                You are one of the most beautiful
+                parts of my life ❤️
+
+            </p>
+
+            <button onclick="closeLetter()">
+
+                Close
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="/static/script.js">
+
+    </script>
+
+</body>
+</html>
